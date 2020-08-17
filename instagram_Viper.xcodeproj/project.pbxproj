@@ -3,19 +3,66 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		006AF80F24EA889000AFD6FC /* tabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006AF80E24EA889000AFD6FC /* tabBarRouter.swift */; };
+		006AF81124EA889D00AFD6FC /* tabBarBuider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006AF81024EA889D00AFD6FC /* tabBarBuider.swift */; };
+		006AF81324EA88D800AFD6FC /* homeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006AF81224EA88D800AFD6FC /* homeTabBar.swift */; };
+		006AF81624EA95D800AFD6FC /* StorageServiceFireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006AF81524EA95D800AFD6FC /* StorageServiceFireBase.swift */; };
 		007C668D24E69FF300528679 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C668C24E69FF300528679 /* AppDelegate.swift */; };
 		007C668F24E69FF300528679 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C668E24E69FF300528679 /* SceneDelegate.swift */; };
-		007C669124E69FF300528679 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C669024E69FF300528679 /* ViewController.swift */; };
+		007C669124E69FF300528679 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C669024E69FF300528679 /* LoginViewController.swift */; };
 		007C669424E69FF300528679 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007C669224E69FF300528679 /* Main.storyboard */; };
 		007C669724E69FF300528679 /* instagram_Viper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 007C669524E69FF300528679 /* instagram_Viper.xcdatamodeld */; };
 		007C669924E69FF500528679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 007C669824E69FF500528679 /* Assets.xcassets */; };
 		007C669C24E69FF500528679 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 007C669A24E69FF500528679 /* LaunchScreen.storyboard */; };
 		007C66A724E69FF500528679 /* instagram_ViperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66A624E69FF500528679 /* instagram_ViperTests.swift */; };
 		007C66B224E69FF500528679 /* instagram_ViperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66B124E69FF500528679 /* instagram_ViperUITests.swift */; };
+		007C66C024E6A37200528679 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 007C66BF24E6A37200528679 /* GoogleService-Info.plist */; };
+		007C66C924E6B7B400528679 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66C824E6B7B400528679 /* SignupViewController.swift */; };
+		007C66CB24E6C25A00528679 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66CA24E6C25900528679 /* LoginPresenter.swift */; };
+		007C66CD24E6C26800528679 /* LogintRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66CC24E6C26800528679 /* LogintRouter.swift */; };
+		007C66CF24E6C27A00528679 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66CE24E6C27A00528679 /* LoginInteractor.swift */; };
+		007C66D124E6C28500528679 /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66D024E6C28500528679 /* LoginBuilder.swift */; };
+		007C66D324E6CA3D00528679 /* registerPresnter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66D224E6CA3D00528679 /* registerPresnter.swift */; };
+		007C66D524E6CA4A00528679 /* registerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66D424E6CA4A00528679 /* registerInteractor.swift */; };
+		007C66D724E6CA5F00528679 /* registerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66D624E6CA5F00528679 /* registerRouter.swift */; };
+		007C66D924E6CA7700528679 /* registerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66D824E6CA7700528679 /* registerBuilder.swift */; };
+		007C66DC24E6D41000528679 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66DB24E6D41000528679 /* Networking.swift */; };
+		007C66DE24E6E76500528679 /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66DD24E6E76500528679 /* FirebaseAuthManager.swift */; };
+		007C66E124E6EC2D00528679 /* Navigations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66E024E6EC2D00528679 /* Navigations.swift */; };
+		0088403624EADEF8008D2DF4 /* searchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0088403524EADEF8008D2DF4 /* searchTableViewCell.swift */; };
+		0088403924EAED5F008D2DF4 /* usersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0088403824EAED5F008D2DF4 /* usersModels.swift */; };
+		00B00C6F24E981DF00FE8205 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C6E24E981DF00FE8205 /* homeViewController.swift */; };
+		00B00C7524E982EF00FE8205 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C7424E982EF00FE8205 /* postViewController.swift */; };
+		00B00C7724E982F900FE8205 /* likesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C7624E982F900FE8205 /* likesViewController.swift */; };
+		00B00C7924E9830600FE8205 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C7824E9830600FE8205 /* profileViewController.swift */; };
+		00B00C7B24E9831100FE8205 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C7A24E9831100FE8205 /* searchViewController.swift */; };
+		00B00C7D24E9839500FE8205 /* homePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C7C24E9839500FE8205 /* homePresenter.swift */; };
+		00B00C7F24E983A100FE8205 /* homeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C7E24E983A100FE8205 /* homeRouter.swift */; };
+		00B00C8124E983AB00FE8205 /* homeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C8024E983AB00FE8205 /* homeInteractor.swift */; };
+		00B00C8324E983B700FE8205 /* homeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C8224E983B700FE8205 /* homeBuilder.swift */; };
+		00B00C8524E983DC00FE8205 /* postPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C8424E983DC00FE8205 /* postPresenter.swift */; };
+		00B00C8724E983E600FE8205 /* postRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C8624E983E600FE8205 /* postRouter.swift */; };
+		00B00C8924E983EF00FE8205 /* postInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C8824E983EF00FE8205 /* postInteractor.swift */; };
+		00B00C8B24E983FC00FE8205 /* postBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C8A24E983FC00FE8205 /* postBuilder.swift */; };
+		00B00C8D24E9840D00FE8205 /* searchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C8C24E9840D00FE8205 /* searchPresenter.swift */; };
+		00B00C8F24E9841700FE8205 /* searchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C8E24E9841700FE8205 /* searchRouter.swift */; };
+		00B00C9124E9842000FE8205 /* searchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C9024E9842000FE8205 /* searchInteractor.swift */; };
+		00B00C9324E9842C00FE8205 /* searchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C9224E9842C00FE8205 /* searchBuilder.swift */; };
+		00B00C9524E9843F00FE8205 /* profilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C9424E9843F00FE8205 /* profilePresenter.swift */; };
+		00B00C9724E9844B00FE8205 /* profileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C9624E9844B00FE8205 /* profileRouter.swift */; };
+		00B00C9924E9845700FE8205 /* profileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C9824E9845700FE8205 /* profileInteractor.swift */; };
+		00B00C9B24E9846200FE8205 /* profileBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C9A24E9846200FE8205 /* profileBuilder.swift */; };
+		00B00C9D24E9847500FE8205 /* likesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C9C24E9847500FE8205 /* likesPresenter.swift */; };
+		00B00C9F24E9848000FE8205 /* likesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C9E24E9848000FE8205 /* likesRouter.swift */; };
+		00B00CA124E9848E00FE8205 /* likesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00CA024E9848E00FE8205 /* likesInteractor.swift */; };
+		00B00CA324E9849B00FE8205 /* likesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00CA224E9849B00FE8205 /* likesBuilder.swift */; };
+		759C8C6CC9A2A6933B3A1525 /* Pods_instagram_ViperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 764F7655AFBFD0BBDF8B07D0 /* Pods_instagram_ViperTests.framework */; };
+		D1E57C93D5E3A99B9FADF1FF /* Pods_instagram_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B1737CAFE65218774A5578 /* Pods_instagram_Viper.framework */; };
+		FD4C842E94C04FC80114F1F5 /* Pods_instagram_Viper_instagram_ViperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8338065C34EF82D21207BD /* Pods_instagram_Viper_instagram_ViperUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +83,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		006AF80E24EA889000AFD6FC /* tabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarRouter.swift; sourceTree = "<group>"; };
+		006AF81024EA889D00AFD6FC /* tabBarBuider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarBuider.swift; sourceTree = "<group>"; };
+		006AF81224EA88D800AFD6FC /* homeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTabBar.swift; sourceTree = "<group>"; };
+		006AF81524EA95D800AFD6FC /* StorageServiceFireBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceFireBase.swift; sourceTree = "<group>"; };
 		007C668924E69FF300528679 /* instagram_Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instagram_Viper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		007C668C24E69FF300528679 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		007C668E24E69FF300528679 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		007C669024E69FF300528679 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		007C669024E69FF300528679 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		007C669324E69FF300528679 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		007C669624E69FF300528679 /* instagram_Viper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = instagram_Viper.xcdatamodel; sourceTree = "<group>"; };
 		007C669824E69FF500528679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +102,55 @@
 		007C66AD24E69FF500528679 /* instagram_ViperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = instagram_ViperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		007C66B124E69FF500528679 /* instagram_ViperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagram_ViperUITests.swift; sourceTree = "<group>"; };
 		007C66B324E69FF500528679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007C66BF24E6A37200528679 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		007C66C824E6B7B400528679 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		007C66CA24E6C25900528679 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		007C66CC24E6C26800528679 /* LogintRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogintRouter.swift; sourceTree = "<group>"; };
+		007C66CE24E6C27A00528679 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		007C66D024E6C28500528679 /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		007C66D224E6CA3D00528679 /* registerPresnter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerPresnter.swift; sourceTree = "<group>"; };
+		007C66D424E6CA4A00528679 /* registerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerInteractor.swift; sourceTree = "<group>"; };
+		007C66D624E6CA5F00528679 /* registerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerRouter.swift; sourceTree = "<group>"; };
+		007C66D824E6CA7700528679 /* registerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerBuilder.swift; sourceTree = "<group>"; };
+		007C66DB24E6D41000528679 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		007C66DD24E6E76500528679 /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
+		007C66E024E6EC2D00528679 /* Navigations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigations.swift; sourceTree = "<group>"; };
+		0088403524EADEF8008D2DF4 /* searchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTableViewCell.swift; sourceTree = "<group>"; };
+		0088403824EAED5F008D2DF4 /* usersModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersModels.swift; sourceTree = "<group>"; };
+		00B00C6E24E981DF00FE8205 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		00B00C7424E982EF00FE8205 /* postViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
+		00B00C7624E982F900FE8205 /* likesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likesViewController.swift; sourceTree = "<group>"; };
+		00B00C7824E9830600FE8205 /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
+		00B00C7A24E9831100FE8205 /* searchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		00B00C7C24E9839500FE8205 /* homePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePresenter.swift; sourceTree = "<group>"; };
+		00B00C7E24E983A100FE8205 /* homeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeRouter.swift; sourceTree = "<group>"; };
+		00B00C8024E983AB00FE8205 /* homeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeInteractor.swift; sourceTree = "<group>"; };
+		00B00C8224E983B700FE8205 /* homeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeBuilder.swift; sourceTree = "<group>"; };
+		00B00C8424E983DC00FE8205 /* postPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postPresenter.swift; sourceTree = "<group>"; };
+		00B00C8624E983E600FE8205 /* postRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postRouter.swift; sourceTree = "<group>"; };
+		00B00C8824E983EF00FE8205 /* postInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postInteractor.swift; sourceTree = "<group>"; };
+		00B00C8A24E983FC00FE8205 /* postBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postBuilder.swift; sourceTree = "<group>"; };
+		00B00C8C24E9840D00FE8205 /* searchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchPresenter.swift; sourceTree = "<group>"; };
+		00B00C8E24E9841700FE8205 /* searchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchRouter.swift; sourceTree = "<group>"; };
+		00B00C9024E9842000FE8205 /* searchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchInteractor.swift; sourceTree = "<group>"; };
+		00B00C9224E9842C00FE8205 /* searchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchBuilder.swift; sourceTree = "<group>"; };
+		00B00C9424E9843F00FE8205 /* profilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilePresenter.swift; sourceTree = "<group>"; };
+		00B00C9624E9844B00FE8205 /* profileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileRouter.swift; sourceTree = "<group>"; };
+		00B00C9824E9845700FE8205 /* profileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileInteractor.swift; sourceTree = "<group>"; };
+		00B00C9A24E9846200FE8205 /* profileBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileBuilder.swift; sourceTree = "<group>"; };
+		00B00C9C24E9847500FE8205 /* likesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likesPresenter.swift; sourceTree = "<group>"; };
+		00B00C9E24E9848000FE8205 /* likesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likesRouter.swift; sourceTree = "<group>"; };
+		00B00CA024E9848E00FE8205 /* likesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likesInteractor.swift; sourceTree = "<group>"; };
+		00B00CA224E9849B00FE8205 /* likesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likesBuilder.swift; sourceTree = "<group>"; };
+		06B1737CAFE65218774A5578 /* Pods_instagram_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A8338065C34EF82D21207BD /* Pods_instagram_Viper_instagram_ViperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram_Viper_instagram_ViperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F64EC4120F4D4CEE07E87F3 /* Pods-instagram_Viper-instagram_ViperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram_Viper-instagram_ViperUITests.debug.xcconfig"; path = "Target Support Files/Pods-instagram_Viper-instagram_ViperUITests/Pods-instagram_Viper-instagram_ViperUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DDE912BD72B6D68CD8ED773 /* Pods-instagram_Viper-instagram_ViperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram_Viper-instagram_ViperUITests.release.xcconfig"; path = "Target Support Files/Pods-instagram_Viper-instagram_ViperUITests/Pods-instagram_Viper-instagram_ViperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		764F7655AFBFD0BBDF8B07D0 /* Pods_instagram_ViperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram_ViperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE54DA72AF1A8614ED6EEC7 /* Pods-instagram_ViperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram_ViperTests.release.xcconfig"; path = "Target Support Files/Pods-instagram_ViperTests/Pods-instagram_ViperTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8EA952F775497F13AC7CD21 /* Pods-instagram_Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram_Viper.release.xcconfig"; path = "Target Support Files/Pods-instagram_Viper/Pods-instagram_Viper.release.xcconfig"; sourceTree = "<group>"; };
+		BD3B0C33FCC63255E24069A4 /* Pods-instagram_Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram_Viper.debug.xcconfig"; path = "Target Support Files/Pods-instagram_Viper/Pods-instagram_Viper.debug.xcconfig"; sourceTree = "<group>"; };
+		D4EEF5B00DEE929E8F100410 /* Pods-instagram_ViperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram_ViperTests.debug.xcconfig"; path = "Target Support Files/Pods-instagram_ViperTests/Pods-instagram_ViperTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E57C93D5E3A99B9FADF1FF /* Pods_instagram_Viper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				759C8C6CC9A2A6933B3A1525 /* Pods_instagram_ViperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +174,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4C842E94C04FC80114F1F5 /* Pods_instagram_Viper_instagram_ViperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		006AF80D24EA887F00AFD6FC /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				006AF80E24EA889000AFD6FC /* tabBarRouter.swift */,
+				006AF81024EA889D00AFD6FC /* tabBarBuider.swift */,
+				006AF81224EA88D800AFD6FC /* homeTabBar.swift */,
+			);
+			path = "Tab Bar";
+			sourceTree = "<group>";
+		};
+		006AF81424EA95C900AFD6FC /* FireBase Services */ = {
+			isa = PBXGroup;
+			children = (
+				006AF81524EA95D800AFD6FC /* StorageServiceFireBase.swift */,
+				007C66DD24E6E76500528679 /* FirebaseAuthManager.swift */,
+			);
+			path = "FireBase Services";
+			sourceTree = "<group>";
+		};
 		007C668024E69FF300528679 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +207,8 @@
 				007C66A524E69FF500528679 /* instagram_ViperTests */,
 				007C66B024E69FF500528679 /* instagram_ViperUITests */,
 				007C668A24E69FF300528679 /* Products */,
+				78236AB09CF39794A839C81F /* Pods */,
+				32B48B69F657E8672D4EC3E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +225,14 @@
 		007C668B24E69FF300528679 /* instagram_Viper */ = {
 			isa = PBXGroup;
 			children = (
-				007C668C24E69FF300528679 /* AppDelegate.swift */,
-				007C668E24E69FF300528679 /* SceneDelegate.swift */,
-				007C669024E69FF300528679 /* ViewController.swift */,
-				007C669224E69FF300528679 /* Main.storyboard */,
-				007C669824E69FF500528679 /* Assets.xcassets */,
-				007C669A24E69FF500528679 /* LaunchScreen.storyboard */,
+				007C66C124E6A77500528679 /* Resources */,
+				006AF81424EA95C900AFD6FC /* FireBase Services */,
+				007C66DF24E6EC1D00528679 /* Navigations */,
+				007C66C224E6A77D00528679 /* Delegations */,
+				007C66DA24E6D3E700528679 /* Networking */,
+				007C66C424E6B77800528679 /* contollers */,
+				007C66C324E6A78500528679 /* Views */,
 				007C669D24E69FF500528679 /* Info.plist */,
-				007C669524E69FF300528679 /* instagram_Viper.xcdatamodeld */,
 			);
 			path = instagram_Viper;
 			sourceTree = "<group>";
@@ -131,6 +255,198 @@
 			path = instagram_ViperUITests;
 			sourceTree = "<group>";
 		};
+		007C66C124E6A77500528679 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				007C669824E69FF500528679 /* Assets.xcassets */,
+				007C66BF24E6A37200528679 /* GoogleService-Info.plist */,
+				007C669524E69FF300528679 /* instagram_Viper.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		007C66C224E6A77D00528679 /* Delegations */ = {
+			isa = PBXGroup;
+			children = (
+				007C668C24E69FF300528679 /* AppDelegate.swift */,
+				007C668E24E69FF300528679 /* SceneDelegate.swift */,
+			);
+			path = Delegations;
+			sourceTree = "<group>";
+		};
+		007C66C324E6A78500528679 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				007C669224E69FF300528679 /* Main.storyboard */,
+				007C669A24E69FF500528679 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		007C66C424E6B77800528679 /* contollers */ = {
+			isa = PBXGroup;
+			children = (
+				006AF80D24EA887F00AFD6FC /* Tab Bar */,
+				00B00C7324E982DE00FE8205 /* posts scenes */,
+				00B00C7224E982D500FE8205 /* Likes scenes */,
+				00B00C7124E982B700FE8205 /* profile scenes */,
+				00B00C7024E9829900FE8205 /* search scenes  */,
+				00B00C6D24E981BC00FE8205 /* Home scenes */,
+				007C66C524E6B78500528679 /* Authentications */,
+			);
+			path = contollers;
+			sourceTree = "<group>";
+		};
+		007C66C524E6B78500528679 /* Authentications */ = {
+			isa = PBXGroup;
+			children = (
+				007C66C724E6B79700528679 /* Sign up */,
+				007C66C624E6B79000528679 /* Login */,
+			);
+			path = Authentications;
+			sourceTree = "<group>";
+		};
+		007C66C624E6B79000528679 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				007C669024E69FF300528679 /* LoginViewController.swift */,
+				007C66CA24E6C25900528679 /* LoginPresenter.swift */,
+				007C66CC24E6C26800528679 /* LogintRouter.swift */,
+				007C66CE24E6C27A00528679 /* LoginInteractor.swift */,
+				007C66D024E6C28500528679 /* LoginBuilder.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		007C66C724E6B79700528679 /* Sign up */ = {
+			isa = PBXGroup;
+			children = (
+				007C66C824E6B7B400528679 /* SignupViewController.swift */,
+				007C66D224E6CA3D00528679 /* registerPresnter.swift */,
+				007C66D424E6CA4A00528679 /* registerInteractor.swift */,
+				007C66D624E6CA5F00528679 /* registerRouter.swift */,
+				007C66D824E6CA7700528679 /* registerBuilder.swift */,
+			);
+			path = "Sign up";
+			sourceTree = "<group>";
+		};
+		007C66DA24E6D3E700528679 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				007C66DB24E6D41000528679 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		007C66DF24E6EC1D00528679 /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				007C66E024E6EC2D00528679 /* Navigations.swift */,
+			);
+			path = Navigations;
+			sourceTree = "<group>";
+		};
+		0088403424EADEDE008D2DF4 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				0088403524EADEF8008D2DF4 /* searchTableViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		0088403724EAED52008D2DF4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0088403824EAED5F008D2DF4 /* usersModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00B00C6D24E981BC00FE8205 /* Home scenes */ = {
+			isa = PBXGroup;
+			children = (
+				00B00C6E24E981DF00FE8205 /* homeViewController.swift */,
+				00B00C7C24E9839500FE8205 /* homePresenter.swift */,
+				00B00C7E24E983A100FE8205 /* homeRouter.swift */,
+				00B00C8024E983AB00FE8205 /* homeInteractor.swift */,
+				00B00C8224E983B700FE8205 /* homeBuilder.swift */,
+			);
+			path = "Home scenes";
+			sourceTree = "<group>";
+		};
+		00B00C7024E9829900FE8205 /* search scenes  */ = {
+			isa = PBXGroup;
+			children = (
+				0088403724EAED52008D2DF4 /* Models */,
+				0088403424EADEDE008D2DF4 /* cells */,
+				00B00C7A24E9831100FE8205 /* searchViewController.swift */,
+				00B00C8C24E9840D00FE8205 /* searchPresenter.swift */,
+				00B00C8E24E9841700FE8205 /* searchRouter.swift */,
+				00B00C9024E9842000FE8205 /* searchInteractor.swift */,
+				00B00C9224E9842C00FE8205 /* searchBuilder.swift */,
+			);
+			path = "search scenes ";
+			sourceTree = "<group>";
+		};
+		00B00C7124E982B700FE8205 /* profile scenes */ = {
+			isa = PBXGroup;
+			children = (
+				00B00C7824E9830600FE8205 /* profileViewController.swift */,
+				00B00C9424E9843F00FE8205 /* profilePresenter.swift */,
+				00B00C9624E9844B00FE8205 /* profileRouter.swift */,
+				00B00C9824E9845700FE8205 /* profileInteractor.swift */,
+				00B00C9A24E9846200FE8205 /* profileBuilder.swift */,
+			);
+			path = "profile scenes";
+			sourceTree = "<group>";
+		};
+		00B00C7224E982D500FE8205 /* Likes scenes */ = {
+			isa = PBXGroup;
+			children = (
+				00B00C7624E982F900FE8205 /* likesViewController.swift */,
+				00B00C9C24E9847500FE8205 /* likesPresenter.swift */,
+				00B00C9E24E9848000FE8205 /* likesRouter.swift */,
+				00B00CA024E9848E00FE8205 /* likesInteractor.swift */,
+				00B00CA224E9849B00FE8205 /* likesBuilder.swift */,
+			);
+			path = "Likes scenes";
+			sourceTree = "<group>";
+		};
+		00B00C7324E982DE00FE8205 /* posts scenes */ = {
+			isa = PBXGroup;
+			children = (
+				00B00C7424E982EF00FE8205 /* postViewController.swift */,
+				00B00C8424E983DC00FE8205 /* postPresenter.swift */,
+				00B00C8624E983E600FE8205 /* postRouter.swift */,
+				00B00C8824E983EF00FE8205 /* postInteractor.swift */,
+				00B00C8A24E983FC00FE8205 /* postBuilder.swift */,
+			);
+			path = "posts scenes";
+			sourceTree = "<group>";
+		};
+		32B48B69F657E8672D4EC3E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06B1737CAFE65218774A5578 /* Pods_instagram_Viper.framework */,
+				1A8338065C34EF82D21207BD /* Pods_instagram_Viper_instagram_ViperUITests.framework */,
+				764F7655AFBFD0BBDF8B07D0 /* Pods_instagram_ViperTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		78236AB09CF39794A839C81F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD3B0C33FCC63255E24069A4 /* Pods-instagram_Viper.debug.xcconfig */,
+				B8EA952F775497F13AC7CD21 /* Pods-instagram_Viper.release.xcconfig */,
+				3F64EC4120F4D4CEE07E87F3 /* Pods-instagram_Viper-instagram_ViperUITests.debug.xcconfig */,
+				4DDE912BD72B6D68CD8ED773 /* Pods-instagram_Viper-instagram_ViperUITests.release.xcconfig */,
+				D4EEF5B00DEE929E8F100410 /* Pods-instagram_ViperTests.debug.xcconfig */,
+				8DE54DA72AF1A8614ED6EEC7 /* Pods-instagram_ViperTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +454,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 007C66B624E69FF500528679 /* Build configuration list for PBXNativeTarget "instagram_Viper" */;
 			buildPhases = (
+				3510F98C64A44FE56E9E1DB1 /* [CP] Check Pods Manifest.lock */,
 				007C668524E69FF300528679 /* Sources */,
 				007C668624E69FF300528679 /* Frameworks */,
 				007C668724E69FF300528679 /* Resources */,
+				90DBBE8409A4E46ABC09BF4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +473,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 007C66B924E69FF500528679 /* Build configuration list for PBXNativeTarget "instagram_ViperTests" */;
 			buildPhases = (
+				1E6B5173C4B2F06DBAFCD32F /* [CP] Check Pods Manifest.lock */,
 				007C669E24E69FF500528679 /* Sources */,
 				007C669F24E69FF500528679 /* Frameworks */,
 				007C66A024E69FF500528679 /* Resources */,
@@ -173,9 +492,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 007C66BC24E69FF500528679 /* Build configuration list for PBXNativeTarget "instagram_ViperUITests" */;
 			buildPhases = (
+				2DC8FF483089CEEDE55182B1 /* [CP] Check Pods Manifest.lock */,
 				007C66A924E69FF500528679 /* Sources */,
 				007C66AA24E69FF500528679 /* Frameworks */,
 				007C66AB24E69FF500528679 /* Resources */,
+				97CDDFCBF5EA0774860C2ED4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +556,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007C66C024E6A37200528679 /* GoogleService-Info.plist in Resources */,
 				007C669C24E69FF500528679 /* LaunchScreen.storyboard in Resources */,
 				007C669924E69FF500528679 /* Assets.xcassets in Resources */,
 				007C669424E69FF300528679 /* Main.storyboard in Resources */,
@@ -257,15 +579,161 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E6B5173C4B2F06DBAFCD32F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-instagram_ViperTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DC8FF483089CEEDE55182B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-instagram_Viper-instagram_ViperUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3510F98C64A44FE56E9E1DB1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-instagram_Viper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90DBBE8409A4E46ABC09BF4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instagram_Viper/Pods-instagram_Viper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instagram_Viper/Pods-instagram_Viper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-instagram_Viper/Pods-instagram_Viper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97CDDFCBF5EA0774860C2ED4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instagram_Viper-instagram_ViperUITests/Pods-instagram_Viper-instagram_ViperUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-instagram_Viper-instagram_ViperUITests/Pods-instagram_Viper-instagram_ViperUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-instagram_Viper-instagram_ViperUITests/Pods-instagram_Viper-instagram_ViperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		007C668524E69FF300528679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007C669124E69FF300528679 /* ViewController.swift in Sources */,
+				007C66CB24E6C25A00528679 /* LoginPresenter.swift in Sources */,
+				007C66CD24E6C26800528679 /* LogintRouter.swift in Sources */,
+				00B00C9124E9842000FE8205 /* searchInteractor.swift in Sources */,
+				007C669124E69FF300528679 /* LoginViewController.swift in Sources */,
+				006AF80F24EA889000AFD6FC /* tabBarRouter.swift in Sources */,
+				00B00C8124E983AB00FE8205 /* homeInteractor.swift in Sources */,
+				00B00C8D24E9840D00FE8205 /* searchPresenter.swift in Sources */,
+				00B00C9324E9842C00FE8205 /* searchBuilder.swift in Sources */,
+				00B00C8924E983EF00FE8205 /* postInteractor.swift in Sources */,
+				0088403624EADEF8008D2DF4 /* searchTableViewCell.swift in Sources */,
+				00B00C8F24E9841700FE8205 /* searchRouter.swift in Sources */,
+				00B00C7724E982F900FE8205 /* likesViewController.swift in Sources */,
+				006AF81124EA889D00AFD6FC /* tabBarBuider.swift in Sources */,
+				00B00C8B24E983FC00FE8205 /* postBuilder.swift in Sources */,
+				0088403924EAED5F008D2DF4 /* usersModels.swift in Sources */,
 				007C668D24E69FF300528679 /* AppDelegate.swift in Sources */,
+				007C66CF24E6C27A00528679 /* LoginInteractor.swift in Sources */,
+				00B00C8324E983B700FE8205 /* homeBuilder.swift in Sources */,
+				007C66D724E6CA5F00528679 /* registerRouter.swift in Sources */,
+				007C66C924E6B7B400528679 /* SignupViewController.swift in Sources */,
+				00B00C7F24E983A100FE8205 /* homeRouter.swift in Sources */,
+				00B00C8724E983E600FE8205 /* postRouter.swift in Sources */,
+				00B00C9924E9845700FE8205 /* profileInteractor.swift in Sources */,
+				006AF81624EA95D800AFD6FC /* StorageServiceFireBase.swift in Sources */,
+				00B00C9D24E9847500FE8205 /* likesPresenter.swift in Sources */,
+				007C66D124E6C28500528679 /* LoginBuilder.swift in Sources */,
 				007C668F24E69FF300528679 /* SceneDelegate.swift in Sources */,
+				00B00C9724E9844B00FE8205 /* profileRouter.swift in Sources */,
+				007C66DE24E6E76500528679 /* FirebaseAuthManager.swift in Sources */,
+				00B00C8524E983DC00FE8205 /* postPresenter.swift in Sources */,
+				00B00CA324E9849B00FE8205 /* likesBuilder.swift in Sources */,
+				00B00C9524E9843F00FE8205 /* profilePresenter.swift in Sources */,
+				00B00C7D24E9839500FE8205 /* homePresenter.swift in Sources */,
+				00B00CA124E9848E00FE8205 /* likesInteractor.swift in Sources */,
 				007C669724E69FF300528679 /* instagram_Viper.xcdatamodeld in Sources */,
+				006AF81324EA88D800AFD6FC /* homeTabBar.swift in Sources */,
+				007C66D524E6CA4A00528679 /* registerInteractor.swift in Sources */,
+				007C66D324E6CA3D00528679 /* registerPresnter.swift in Sources */,
+				00B00C7B24E9831100FE8205 /* searchViewController.swift in Sources */,
+				007C66D924E6CA7700528679 /* registerBuilder.swift in Sources */,
+				00B00C7524E982EF00FE8205 /* postViewController.swift in Sources */,
+				007C66DC24E6D41000528679 /* Networking.swift in Sources */,
+				00B00C6F24E981DF00FE8205 /* homeViewController.swift in Sources */,
+				00B00C9F24E9848000FE8205 /* likesRouter.swift in Sources */,
+				00B00C9B24E9846200FE8205 /* profileBuilder.swift in Sources */,
+				00B00C7924E9830600FE8205 /* profileViewController.swift in Sources */,
+				007C66E124E6EC2D00528679 /* Navigations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +904,7 @@
 		};
 		007C66B724E69FF500528679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD3B0C33FCC63255E24069A4 /* Pods-instagram_Viper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +923,7 @@
 		};
 		007C66B824E69FF500528679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8EA952F775497F13AC7CD21 /* Pods-instagram_Viper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +942,7 @@
 		};
 		007C66BA24E69FF500528679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4EEF5B00DEE929E8F100410 /* Pods-instagram_ViperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +965,7 @@
 		};
 		007C66BB24E69FF500528679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE54DA72AF1A8614ED6EEC7 /* Pods-instagram_ViperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +988,7 @@
 		};
 		007C66BD24E69FF500528679 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F64EC4120F4D4CEE07E87F3 /* Pods-instagram_Viper-instagram_ViperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +1009,7 @@
 		};
 		007C66BE24E69FF500528679 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DDE912BD72B6D68CD8ED773 /* Pods-instagram_Viper-instagram_ViperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

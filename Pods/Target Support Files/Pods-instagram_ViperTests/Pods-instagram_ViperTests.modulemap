@@ -1,0 +1,6 @@
+framework module Pods_instagram_ViperTests {
+  umbrella header "Pods-instagram_ViperTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
