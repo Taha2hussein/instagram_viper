@@ -17,7 +17,7 @@ protocol postPresentation : class {
 class postPresenter{
        var interactor : postUseCases?
        var router : postRouting?
-       var view : postView?
+      weak var view : postView?
       init(view:postView , router:postRouting,interactor:postUseCases) {
         self.view = view
         self.interactor = interactor

@@ -9,42 +9,80 @@
 import UIKit
 import IBAnimatable
 import Firebase
+import ListPlaceholder
+
 protocol searchView : class {
     func getAllUsers()
     func failedToLoadUser()
     func reloadTableView()
+    func shlowLoader()
+    func hideLoader()
+    func showRefreshControl()
+    func hideRefreshcontrol()
 }
 class searchViewController: UIViewController {
-
-    // Mark : Variables
-     var presenter : searchPresentation?
     
+    // Mark : Variables
+    var presenter : searchPresentation?
+    private var pullControl = UIRefreshControl()
+    //Mark: outlets
+    
+    @IBOutlet weak var searchTextFiled: AnimatableTextField!
     @IBOutlet weak var searchTableView: UITableView!
+    
     // Mark : life cycle
-      override func viewDidLoad() {
-          super.viewDidLoad()
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        searchTextFiled.delegate = self
+        showRefreshControl()
     }
-      override func viewWillAppear(_ animated: Bool) {
-          super.viewWillAppear(true)
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
         getAllUsers()
-              self.navigationController?.isNavigationBarHidden = true
-      }
-   
-
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    
+    @objc func refresh(sender:AnyObject) {
+        getAllUsers()
+    }
+    
 }
 extension searchViewController :searchView{
+    func hideRefreshcontrol() {
+        self.searchTableView?.refreshControl?.endRefreshing()
+    }
+    
+    func showRefreshControl() {
+        pullControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        searchTableView?.refreshControl = pullControl
+    }
+    
+    func shlowLoader() {
+        searchTableView.showLoader()
+    }
+    
+    func hideLoader() {
+        searchTableView.hideLoader()
+        
+    }
+    
     func reloadTableView() {
         self.searchTableView.reloadData()
     }
     
     func failedToLoadUser() {
-        self.searchTableView.isHidden = true
+        Navigations.shared.showAlert("An error occureds", view: self)
     }
     
     func getAllUsers() {
+        
         presenter?.getUser()
     }
+    
     
     
 }
@@ -63,6 +101,21 @@ extension searchViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
     }
+    
+    
+}
+
+
+extension searchViewController:UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchTextFiled.resignFirstResponder()
+        return true
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        let searchText  = textField.text ?? ""
+        presenter?.searchUser(user: searchText)
+    }
+    
     
     
 }

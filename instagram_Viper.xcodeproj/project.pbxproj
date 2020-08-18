@@ -35,6 +35,7 @@
 		007C66E124E6EC2D00528679 /* Navigations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C66E024E6EC2D00528679 /* Navigations.swift */; };
 		0088403624EADEF8008D2DF4 /* searchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0088403524EADEF8008D2DF4 /* searchTableViewCell.swift */; };
 		0088403924EAED5F008D2DF4 /* usersModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0088403824EAED5F008D2DF4 /* usersModels.swift */; };
+		00A7D64624EBD253006A613D /* homeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A7D64524EBD253006A613D /* homeTableViewCell.swift */; };
 		00B00C6F24E981DF00FE8205 /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C6E24E981DF00FE8205 /* homeViewController.swift */; };
 		00B00C7524E982EF00FE8205 /* postViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C7424E982EF00FE8205 /* postViewController.swift */; };
 		00B00C7724E982F900FE8205 /* likesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C7624E982F900FE8205 /* likesViewController.swift */; };
@@ -60,6 +61,8 @@
 		00B00C9F24E9848000FE8205 /* likesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00C9E24E9848000FE8205 /* likesRouter.swift */; };
 		00B00CA124E9848E00FE8205 /* likesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00CA024E9848E00FE8205 /* likesInteractor.swift */; };
 		00B00CA324E9849B00FE8205 /* likesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B00CA224E9849B00FE8205 /* likesBuilder.swift */; };
+		00D1420324EC05F9006EC9C8 /* homeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1420224EC05F8006EC9C8 /* homeModels.swift */; };
+		00D1420624EC165F006EC9C8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D1420524EC165F006EC9C8 /* Extension.swift */; };
 		759C8C6CC9A2A6933B3A1525 /* Pods_instagram_ViperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 764F7655AFBFD0BBDF8B07D0 /* Pods_instagram_ViperTests.framework */; };
 		D1E57C93D5E3A99B9FADF1FF /* Pods_instagram_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B1737CAFE65218774A5578 /* Pods_instagram_Viper.framework */; };
 		FD4C842E94C04FC80114F1F5 /* Pods_instagram_Viper_instagram_ViperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A8338065C34EF82D21207BD /* Pods_instagram_Viper_instagram_ViperUITests.framework */; };
@@ -117,6 +120,7 @@
 		007C66E024E6EC2D00528679 /* Navigations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigations.swift; sourceTree = "<group>"; };
 		0088403524EADEF8008D2DF4 /* searchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchTableViewCell.swift; sourceTree = "<group>"; };
 		0088403824EAED5F008D2DF4 /* usersModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersModels.swift; sourceTree = "<group>"; };
+		00A7D64524EBD253006A613D /* homeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTableViewCell.swift; sourceTree = "<group>"; };
 		00B00C6E24E981DF00FE8205 /* homeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
 		00B00C7424E982EF00FE8205 /* postViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postViewController.swift; sourceTree = "<group>"; };
 		00B00C7624E982F900FE8205 /* likesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likesViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 		00B00C9E24E9848000FE8205 /* likesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likesRouter.swift; sourceTree = "<group>"; };
 		00B00CA024E9848E00FE8205 /* likesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likesInteractor.swift; sourceTree = "<group>"; };
 		00B00CA224E9849B00FE8205 /* likesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = likesBuilder.swift; sourceTree = "<group>"; };
+		00D1420224EC05F8006EC9C8 /* homeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeModels.swift; sourceTree = "<group>"; };
+		00D1420524EC165F006EC9C8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		06B1737CAFE65218774A5578 /* Pods_instagram_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8338065C34EF82D21207BD /* Pods_instagram_Viper_instagram_ViperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram_Viper_instagram_ViperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F64EC4120F4D4CEE07E87F3 /* Pods-instagram_Viper-instagram_ViperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagram_Viper-instagram_ViperUITests.debug.xcconfig"; path = "Target Support Files/Pods-instagram_Viper-instagram_ViperUITests/Pods-instagram_Viper-instagram_ViperUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -342,6 +348,7 @@
 			isa = PBXGroup;
 			children = (
 				007C66E024E6EC2D00528679 /* Navigations.swift */,
+				00D1420524EC165F006EC9C8 /* Extension.swift */,
 			);
 			path = Navigations;
 			sourceTree = "<group>";
@@ -362,9 +369,19 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		00A7D64424EBD239006A613D /* homecells */ = {
+			isa = PBXGroup;
+			children = (
+				00A7D64524EBD253006A613D /* homeTableViewCell.swift */,
+			);
+			path = homecells;
+			sourceTree = "<group>";
+		};
 		00B00C6D24E981BC00FE8205 /* Home scenes */ = {
 			isa = PBXGroup;
 			children = (
+				00D1420424EC077D006EC9C8 /* homePostsModel */,
+				00A7D64424EBD239006A613D /* homecells */,
 				00B00C6E24E981DF00FE8205 /* homeViewController.swift */,
 				00B00C7C24E9839500FE8205 /* homePresenter.swift */,
 				00B00C7E24E983A100FE8205 /* homeRouter.swift */,
@@ -422,6 +439,14 @@
 				00B00C8A24E983FC00FE8205 /* postBuilder.swift */,
 			);
 			path = "posts scenes";
+			sourceTree = "<group>";
+		};
+		00D1420424EC077D006EC9C8 /* homePostsModel */ = {
+			isa = PBXGroup;
+			children = (
+				00D1420224EC05F8006EC9C8 /* homeModels.swift */,
+			);
+			path = homePostsModel;
 			sourceTree = "<group>";
 		};
 		32B48B69F657E8672D4EC3E4 /* Frameworks */ = {
@@ -718,9 +743,11 @@
 				007C66DE24E6E76500528679 /* FirebaseAuthManager.swift in Sources */,
 				00B00C8524E983DC00FE8205 /* postPresenter.swift in Sources */,
 				00B00CA324E9849B00FE8205 /* likesBuilder.swift in Sources */,
+				00D1420324EC05F9006EC9C8 /* homeModels.swift in Sources */,
 				00B00C9524E9843F00FE8205 /* profilePresenter.swift in Sources */,
 				00B00C7D24E9839500FE8205 /* homePresenter.swift in Sources */,
 				00B00CA124E9848E00FE8205 /* likesInteractor.swift in Sources */,
+				00D1420624EC165F006EC9C8 /* Extension.swift in Sources */,
 				007C669724E69FF300528679 /* instagram_Viper.xcdatamodeld in Sources */,
 				006AF81324EA88D800AFD6FC /* homeTabBar.swift in Sources */,
 				007C66D524E6CA4A00528679 /* registerInteractor.swift in Sources */,
@@ -733,6 +760,7 @@
 				00B00C9F24E9848000FE8205 /* likesRouter.swift in Sources */,
 				00B00C9B24E9846200FE8205 /* profileBuilder.swift in Sources */,
 				00B00C7924E9830600FE8205 /* profileViewController.swift in Sources */,
+				00A7D64624EBD253006A613D /* homeTableViewCell.swift in Sources */,
 				007C66E124E6EC2D00528679 /* Navigations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

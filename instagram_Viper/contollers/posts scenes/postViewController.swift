@@ -14,6 +14,7 @@ protocol postView :class{
     func hideContet()
     func showContent()
     func uploadPost()
+    
 }
 
 class postViewController: UIViewController {

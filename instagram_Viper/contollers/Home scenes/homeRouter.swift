@@ -6,4 +6,19 @@
 //  Copyright © 2020 Taha Hussein. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+protocol  homeRouting :class{
+    
+}
+class homeRouter {
+   weak var view: UIViewController?
+    init(view: UIViewController) {
+        self.view = view
+    }
+}
+
+
+extension homeRouter : homeRouting{
+    
+}
