@@ -13,7 +13,7 @@ import Kingfisher
 
 
 protocol postCell : class {
-    func postCell(_ cell : homeTableViewCell , post: homeModel)
+    func postCell(_ cell : homeTableViewCell , post: homeModel , postLikes: [likes])
 }
 
 class homeTableViewCell: UITableViewCell {
@@ -58,12 +58,27 @@ class homeTableViewCell: UITableViewCell {
     
 }
 extension homeTableViewCell : postCell{
-    func postCell(_ cell: homeTableViewCell, post: homeModel) {
+    func postCell(_ cell: homeTableViewCell, post: homeModel ,  postLikes: [likes]) {
         self.photoCaption.text = post.caption
         let date = post.creationDate.timeAgoDisplay()
         self.photoTimeStamp.text = date
         let url = URL(string: post.imageUrl)
         self.photoPost.kf.setImage(with: url)
+        
+        for item in postLikes{
+                  if item.post_id == post.id{
+                      print(item.post_id)
+                    self.likeButton.setImage(UIImage(named: "like_selected"), for: UIControl.State.normal)
+                    
+                  }
+                  else{
+                    self.likeButton.setImage(UIImage(named: "like_unselected"), for: UIControl.State.normal)
+            }
+          
+                  
+              }
+        
+      
     }
     
     

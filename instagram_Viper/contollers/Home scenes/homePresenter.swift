@@ -89,22 +89,18 @@ extension homePresenter : homePresentation{
     }
     
     func postCell(_ cell: homeTableViewCell, _ indexPath: IndexPath) {
-        let post = postArray[indexPath.row]
-        cell.postCell(cell, post: post)
+         let post = postArray[indexPath.row]
         
-        
-        for item in postLikes{
-            if item.post_id == post.id{
-                cell.likeButton.setImage(UIImage(named: "like_selected"), for: UIControl.State.normal)
-            }
-        }
+        cell.postCell(cell, post: post, postLikes: postLikes)
+      
+      
         
     }
     
     
     func sucessToGetPostLikes(_ likes: [likes]) {
         self.postLikes = likes
-      
+        
     }
     
     func failestoGetPostLikes(_ error: Error) {
@@ -112,10 +108,11 @@ extension homePresenter : homePresentation{
     }
     func sucessToGetUserPosts(_ homeModel: [homeModel]) {
         postArray = homeModel
+      
         view?.hideRefreshcontrol()
-        view?.reloadData()
         view?.hideListLoading()
-        
+        view?.reloadData()
+    
     }
     
     func failedToGetUserPosts(_ error: Error) {
@@ -127,10 +124,9 @@ extension homePresenter : homePresentation{
     }
     
     func getPosts() {
-        postLikes.removeAll()
-        postArray.removeAll()
-        interactor?.getPosts()
+//        postLikes.removeAll()
+//        postArray.removeAll()
+       interactor?.getPosts()
+      
     }
-    
-    
 }

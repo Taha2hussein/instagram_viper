@@ -79,8 +79,8 @@ extension Date {
     }
 }
 extension Array {
-    func contain<T>(obj: T,arr:[T]) -> Bool where T : Equatable {
-        print(self.filter({$0 as? T == obj}).count > 0)
-        return arr.filter({$0 as? T == obj}).count > 0
+    func contain<T>(obj: T) -> Bool where T : Equatable {
+        
+        return self.filter({$0 as? T == obj}).count > 0
     }
 }

@@ -30,25 +30,26 @@ class homeViewController: UIViewController {
     // Mark : life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        showRefreshControl()
+       showRefreshControl()
+         getPosts()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-      
+       
   self.navigationController?.setNavigationBarHidden(true, animated: true)
-        getPosts()
+       
     }
 
     func getPosts(){
         showListLoading()
         
-        let queue = DispatchQueue.global(qos: .userInteractive)
+        let queue = DispatchQueue.global(qos: .background)
         queue.async() { () -> Void in
               self.presenter?.psotLikes()
            
           
         }
-         let queue1 = DispatchQueue.global(qos: .background)
+         let queue1 = DispatchQueue.global(qos: .userInteractive)
         queue1.async() { () -> Void in
            self.presenter?.getPosts()
         }
@@ -56,6 +57,7 @@ class homeViewController: UIViewController {
     
     @objc func refresh(sender:AnyObject) {
         getPosts()
+        
     }
 }
 
