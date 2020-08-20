@@ -16,14 +16,15 @@ struct homeModel {
     var imageWidth:Float!
     var imageUrl : String!
     
-    init(_ caption:String,_ creationDate : Date , _ id : String, _ imageHeight:Float , _ imageWidth : Float , _ imageUrl : String) {
-        self.caption = caption
-        self.creationDate = creationDate
-        self.id = id
-        self.imateHeight = imageHeight
-        self.imageWidth = imageWidth
-        self.imageUrl = imageUrl
-        
+    init(_ dictionary : [String:AnyObject]) {
+        self.caption = dictionary["caption"] as? String
+        self.id = dictionary["id"] as? String
+        self.imateHeight = dictionary["imageHeight"] as? Float
+        self.imageWidth = dictionary["imageWidth"] as? Float
+        self.imageUrl = dictionary["imageUrl"] as? String
+        let secondsFrom1970 = dictionary["creationDate"] as? Double ?? 0.0
+    self.creationDate = Date(timeIntervalSince1970: secondsFrom1970)
     }
 }
+
 

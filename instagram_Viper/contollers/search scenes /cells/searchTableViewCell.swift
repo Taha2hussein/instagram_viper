@@ -15,17 +15,21 @@ protocol ssearchCellView {
 }
 class searchTableViewCell: UITableViewCell {
 
+    // Mark : Outelts
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userImage: AnimatableImageView!
+    
+ 
+    
+    // Mark  : lifecycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
 
 }

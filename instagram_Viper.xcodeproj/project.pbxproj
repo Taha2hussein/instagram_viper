@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0019DD4F24EE34810039984D /* post_likes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0019DD4E24EE34810039984D /* post_likes.swift */; };
 		006AF80F24EA889000AFD6FC /* tabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006AF80E24EA889000AFD6FC /* tabBarRouter.swift */; };
 		006AF81124EA889D00AFD6FC /* tabBarBuider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006AF81024EA889D00AFD6FC /* tabBarBuider.swift */; };
 		006AF81324EA88D800AFD6FC /* homeTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006AF81224EA88D800AFD6FC /* homeTabBar.swift */; };
@@ -86,6 +87,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0019DD4E24EE34810039984D /* post_likes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = post_likes.swift; sourceTree = "<group>"; };
 		006AF80E24EA889000AFD6FC /* tabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarRouter.swift; sourceTree = "<group>"; };
 		006AF81024EA889D00AFD6FC /* tabBarBuider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarBuider.swift; sourceTree = "<group>"; };
 		006AF81224EA88D800AFD6FC /* homeTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeTabBar.swift; sourceTree = "<group>"; };
@@ -445,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				00D1420224EC05F8006EC9C8 /* homeModels.swift */,
+				0019DD4E24EE34810039984D /* post_likes.swift */,
 			);
 			path = homePostsModel;
 			sourceTree = "<group>";
@@ -755,6 +758,7 @@
 				00B00C7B24E9831100FE8205 /* searchViewController.swift in Sources */,
 				007C66D924E6CA7700528679 /* registerBuilder.swift in Sources */,
 				00B00C7524E982EF00FE8205 /* postViewController.swift in Sources */,
+				0019DD4F24EE34810039984D /* post_likes.swift in Sources */,
 				007C66DC24E6D41000528679 /* Networking.swift in Sources */,
 				00B00C6F24E981DF00FE8205 /* homeViewController.swift in Sources */,
 				00B00C9F24E9848000FE8205 /* likesRouter.swift in Sources */,

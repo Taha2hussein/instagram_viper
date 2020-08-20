@@ -69,20 +69,84 @@ class FirebaseAuthManager{
             var psotModel = [homeModel]()
             dictionary.forEach({ (key, value) in
                 
-                 let secondsFrom1970 = dictionary["creationDate"] as? Double ?? 0
-                let Data = Date(timeIntervalSince1970: secondsFrom1970)
+                
                 
                 guard let userDictionary = value as? [String: Any] else { return }
-                let post = homeModel(userDictionary["caption"] as! String, Data, userDictionary["id"] as! String, userDictionary["imageHeight"] as! Float, userDictionary["imageWidth"] as! Float, userDictionary["imageUrl"] as! String)
+                
+                let post = homeModel(userDictionary as [String : AnyObject])
                 psotModel.append(post)
             })
             completion(psotModel)
-            })
-            { (err) in
-                print("Failed to fetch all posts from database:", (err))
-                cancel?(err)
-            }
+        })
+        { (err) in
+            print("Failed to fetch all posts from database:", (err))
+            cancel?(err)
+        }
         
     }
     
+    func likePost(_ uid:String , postId:String , completion:@escaping(Bool)->() ){
+        var ref = DatabaseReference()
+        ref = Database.database().reference()
+        let Data = [uid : 1]
+        ref.child("likes").child(postId).setValue(Data){
+          (error:Error?, ref:DatabaseReference) in
+          if let error = error {
+            print("Data could not be saved: \(error).")
+            completion(false)
+          } else {
+            print("Data saved successfully!")
+            completion(true)
+          }
+        }
+    }
+    
+    
+    func unLikePost(_ uid:String , postId:String , completion:@escaping(Bool)->() ){
+           var ref = DatabaseReference()
+           ref = Database.database().reference()
+         
+        ref.child("likes").child(postId).removeValue(){
+             (error:Error?, ref:DatabaseReference) in
+             if let error = error {
+               print("Data could not be saved: \(error).")
+               completion(false)
+             } else {
+               print("Data saved successfully!")
+               completion(true)
+             }
+           }
+       }
+    
+    func getPostLikes(completion:@escaping([likes])->() , withCancel cancel: ((Error) -> ())?){
+        Database.database().reference().child("likes").queryOrderedByKey().observeSingleEvent(of: .value, with: { snapshot in
+            
+            guard let dictionary = snapshot.value as? [String:AnyObject] else {
+                print("Error")
+                completion([])
+                return
+            }
+         
+            var likesModel = [likes]()
+            dictionary.forEach({ (key, value) in
+                
+                
+                
+                guard let userDictionary = value as? [String: Any] else { return }
+               
+                let uid = Auth.auth().currentUser?.uid
+                if (userDictionary.keys.first) == uid{
+                let like = likes(id: key)
+                
+                likesModel.append(like)
+               
+                }
+            })
+            completion(likesModel)
+        })
+        { (err) in
+            print("Failed to fetch all posts from database:", (err))
+            cancel?(err)
+        }
+    }
 }

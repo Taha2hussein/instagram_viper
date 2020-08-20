@@ -15,6 +15,7 @@ protocol homeView : class{
     func reloadData()
     func showRefreshControl()
     func hideRefreshcontrol()
+    
 }
 
 class homeViewController: UIViewController {
@@ -40,7 +41,17 @@ class homeViewController: UIViewController {
 
     func getPosts(){
         showListLoading()
-        presenter?.getPosts()
+        
+        let queue = DispatchQueue.global(qos: .userInteractive)
+        queue.async() { () -> Void in
+              self.presenter?.psotLikes()
+           
+          
+        }
+         let queue1 = DispatchQueue.global(qos: .background)
+        queue1.async() { () -> Void in
+           self.presenter?.getPosts()
+        }
     }
     
     @objc func refresh(sender:AnyObject) {
@@ -57,6 +68,37 @@ extension homeViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeTableViewCell", for: indexPath)as! homeTableViewCell
         presenter?.postCell(cell, indexPath)
+        
+        cell.likeTapped = {[weak self] in
+           
+            let btnImag = cell.likeButton.image(for: .normal)
+            
+            if btnImag == UIImage(named: "like_selected"){
+                 cell.likeButton.setImage(UIImage(named: "like_unselected"), for: UIControl.State.normal)
+                self?.presenter?.postUnlikeButtonTapped(indexPath.row)
+              
+            }
+            else{
+                cell.likeButton.setImage(UIImage(named: "like_selected"), for: UIControl.State.normal)
+                 self?.presenter?.postlikeButtonTapped(indexPath.row)
+                
+            }
+            
+        }
+        
+        cell.commentTapped = {[weak self] in
+            
+            self?.presenter?.postcommentButtonTapped(indexPath.row)
+            
+        }
+        
+        cell.postSetting = {[weak self] in
+            
+            self?.presenter?.postsettingButtonTapped(indexPath.row)
+            
+            
+        }
+        
         return cell
         
     }
@@ -66,6 +108,7 @@ extension homeViewController: UITableViewDataSource,UITableViewDelegate{
 
 
 extension homeViewController : homeView{
+    
     func showRefreshControl() {
          pullControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         postTableView?.refreshControl = pullControl

@@ -10,35 +10,50 @@ import UIKit
 import Firebase
 import IBAnimatable
 import Kingfisher
+
+
 protocol postCell : class {
     func postCell(_ cell : homeTableViewCell , post: homeModel)
 }
 
 class homeTableViewCell: UITableViewCell {
 
+    
+    // Mark : outlets
     @IBOutlet weak var photoTimeStamp: UILabel!
     @IBOutlet weak var photoCaption: UILabel!
     @IBOutlet weak var photoPost: UIImageView!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var userImage: AnimatableImageView!
+    
+    @IBOutlet weak var likeButton: UIButton!
+    // closures
+     var likeTapped : (()->())?
+     var commentTapped : (()->())?
+     var postSetting : (()->())?
+    
+    // Mark : life cycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+       
     }
     @IBAction func commentbuttonTapped(_ sender: Any) {
-        
+       
+        commentTapped?()
     }
     @IBAction func likebuttonTapped(_ sender: Any) {
-        
+       
+        likeTapped?()
     }
     @IBAction func postSetting(_ sender: Any) {
-        
+           
+        postSetting?()
     }
     
 }
