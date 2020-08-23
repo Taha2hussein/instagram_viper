@@ -9,7 +9,7 @@
 import UIKit
 
 class profileViewController: UIViewController {
-
+    var presenter : homePresentation!
       
       // Mark : life cycle
       override func viewDidLoad() {
@@ -21,4 +21,9 @@ class profileViewController: UIViewController {
           super.viewWillAppear(true)
               self.navigationController?.isNavigationBarHidden = true
       }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(true)
+      
+        presenter?.show()
+    }
 }

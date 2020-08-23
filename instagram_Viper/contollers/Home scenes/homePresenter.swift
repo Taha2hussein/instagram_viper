@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 protocol  homePresentation : class{
+    func show()
     func getPosts()
     func psotLikes()
     func sucessToGetUserPosts( _ homeModel:[homeModel])
@@ -45,6 +46,10 @@ class homePresenter {
 
 
 extension homePresenter : homePresentation{
+    func show() {
+        print("sdfsdf")
+    }
+    
     
     
     

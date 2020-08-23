@@ -43,13 +43,13 @@ class homeViewController: UIViewController {
     func getPosts(){
         showListLoading()
         
-        let queue = DispatchQueue.global(qos: .background)
+        let queue = DispatchQueue.global(qos: .userInteractive)
         queue.async() { () -> Void in
               self.presenter?.psotLikes()
            
           
         }
-         let queue1 = DispatchQueue.global(qos: .userInteractive)
+         let queue1 = DispatchQueue.global(qos: .background)
         queue1.async() { () -> Void in
            self.presenter?.getPosts()
         }
@@ -57,7 +57,7 @@ class homeViewController: UIViewController {
     
     @objc func refresh(sender:AnyObject) {
         getPosts()
-        
+
     }
 }
 
